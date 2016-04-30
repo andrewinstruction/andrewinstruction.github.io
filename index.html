@@ -43,9 +43,11 @@
     <main>
       <hr />
       <ul>
+        {% for rant in site.posts %}
         <li>
-          <a href=''>So you think you are a functional programmer?</a>
+          <a href='{{rant.url}}'>{{rant.title}}</a>
         </li>
+        {% endfor %}
       </ul>
       <hr />
     </main>
